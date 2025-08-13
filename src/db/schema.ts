@@ -120,3 +120,12 @@ export const productVariantRelations = relations(
     }),
   }),
 );
+export const schema = {
+  userTable,
+  sessionTable,
+  accountTable,
+  verificationTable,
+  categoryTable,
+  productTable,
+  productVariantTable,
+};

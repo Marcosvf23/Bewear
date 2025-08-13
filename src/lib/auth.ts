@@ -13,12 +13,12 @@ export const auth = betterAuth({
     schema,
   }),
   user: {
-    modelName: "usertable",
+    modelName: "userTable",
   },
   session: {
-    modelName: "sessiontable",
+    modelName: "sessionTable",
   },
   account: {
-    modelName: "accounttable",
+    modelName: "accountTable",
   },
 });
