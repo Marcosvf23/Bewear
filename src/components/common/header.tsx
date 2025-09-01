@@ -1,6 +1,13 @@
 "use client";
 
-import { LogInIcon, LogOutIcon, MenuIcon } from "lucide-react";
+import {
+  HomeIcon,
+  LogInIcon,
+  LogOutIcon,
+  MenuIcon,
+  ShoppingBagIcon,
+  TruckIcon,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -75,6 +82,22 @@ export const Header = () => {
                       <LogInIcon />
                     </Link>
                   </Button>
+                </div>
+              )}
+            </div>
+            <div className="flex items-center gap-2">
+              <HomeIcon />
+              <Link href="/" className="font-poppins">
+                Início
+              </Link>
+            </div>
+            <div className="flex items-center gap-2">
+              {session?.user && (
+                <div className="flex items-center gap-2">
+                  <TruckIcon />
+                  <Link href="/my-orders" className="font-poppins">
+                    Meus pedidos
+                  </Link>
                 </div>
               )}
             </div>
